@@ -11,8 +11,15 @@ body {
   background-color: transparent;
   box-sizing: border-box;
   resize: horizontal;
-  width: 30%;
-  padding-bottom: 47%;
+  width: 400px;
+  padding-bottom: 600px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 250px;
+    padding-bottom: 300px;
+  }
 }
 
 .wrapper > .popup {

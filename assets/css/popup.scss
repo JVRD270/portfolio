@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #303030;
+}
+
+.wrapper {
+  position: relative;
+  background-color: transparent;
+  box-sizing: border-box;
+  resize: horizontal;
+  width: 30%;
+  padding-bottom: 47%;
+}
+
+.wrapper > .popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
+  border-radius: 10px;
+  background-color: #303030;
+  color: snow;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  padding-top: 0.5%;
+  padding-bottom: 0.3vw;
+  border: 3px solid rgb(68, 68, 68);
+}
+
+.popup h3 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 3vw;
+  width: 100%;
+}
+
+.popup button {
+  display: inline-block;
+  margin-top: -3%;
+  margin-left: 2%;
+  width: 45%;
+  height: 8%;
+  font-size: 1.4vw;
+}
+
+.btn-primary {
+  background-color: rgb(91, 91, 250) !important;
+  border-color: rgb(91, 91, 250) !important;
+  padding: 2% !important;
+}
+
+.btn-primary:hover {
+  background-color: rgb(65, 65, 172) !important;
+}
+
+.btn-success {
+  padding: 2% !important;
+}
+
+.projectImg {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  /* border-top: 0.5px solid snow;
+  border-bottom: 0.5px solid snow; */
+}
+
+.languages {
+  width: 100%;
+  height: 6%;
+  background-color: transparent;
+}
+
+.languages img {
+  width: 10%;
+  padding-bottom: 1%;
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 10%;
+  margin-top: -6%;
+  margin-bottom: 1%;
+  padding-top: 4%;
+}
+
+.description {
+  padding: 0 5%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -5%;
+  font-size: 1.3vw;
+}
+
+.description p {
+  margin-bottom: 8%;
+}

@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   resize: horizontal;
   width: 400px;
-  padding-bottom: 600px;
+  padding-bottom: 590px;
 }
 
 @media only screen and (max-width: 900px) {

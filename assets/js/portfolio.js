@@ -1,6 +1,28 @@
 let card = $(".wrapper");
 let projects = $(".projects");
 
+$(window).scroll(function () {
+  let scrollPosition1 = $("#about").offset().top;
+  let scrollPosition2 = $("#work").offset().top;
+  let scrollPosition3 = $("#contact").offset().top;
+  if ($(this).scrollTop() < scrollPosition2 - 30) {
+    $("#sidebarBtnAbout").addClass("active");
+    $("#sidebarBtnWork").removeClass("active");
+    $("#sidebarBtnContact").removeClass("active");
+  } else if (
+    $(this).scrollTop() > scrollPosition1 &&
+    $(this).scrollTop() < scrollPosition3 - 50
+  ) {
+    $("#sidebarBtnAbout").removeClass("active");
+    $("#sidebarBtnWork").addClass("active");
+    $("#sidebarBtnContact").removeClass("active");
+  } else if ($(this).scrollTop() > scrollPosition2 - 50) {
+    $("#sidebarBtnAbout").removeClass("active");
+    $("#sidebarBtnWork").removeClass("active");
+    $("#sidebarBtnContact").addClass("active");
+  }
+});
+
 let imgs = ["./assets/img/1.gif", "./assets/img/2.gif", "./assets/img/3.gif"];
 
 let descs = [
@@ -43,8 +65,9 @@ projects.on("click", function () {
   $(".overlay").addClass("darken");
   $(".popup .projectImg").attr("src", CurrentProject.img);
   $(".popup p").text(CurrentProject.description);
-  $(".popup .btn-primary a").attr("href", CurrentProject.link1);
-  $(".popup .btn-success a").attr("href", CurrentProject.link2);
+  $(".popup .btn1").attr("href", CurrentProject.link1);
+  $(".popup .repo").attr("href", CurrentProject.link2);
+  console.log($(".popup .btn-success a").attr("href"));
 });
 
 $(".popup i").on("click", function () {

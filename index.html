@@ -34,12 +34,12 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         ><i class="fas fa-angle-double-right"></i
       ></a>
-      <a href="#">About</a>
-      <a href="#">Work</a>
-      <a href="#">Contact</a>
+      <a href="#about" id="sidebarBtnAbout" class="active">About</a>
+      <a href="#work" id="sidebarBtnWork">Work</a>
+      <a href="#contact" id="sidebarBtnContact">Contact</a>
     </div>
 
-    <div class="container">
+    <div class="container" id="about">
       <div class="about">
         <h1 class="display-4">Welcome, I'm Victor</h1>
         <p>
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="works">
+    <div class="works" id="work">
       <h1 class="display-4" id="workTitle">My Work</h1>
       <div class="myProjects">
         <div class="row d-flex justify-content-center">
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="contact">
       <div class="contact">
         <h1 class="display-5">Contact Info</h1>
         <p>
@@ -131,12 +131,16 @@
             repudiandae corporis, consequuntur doloribus veritatis. Ex.
           </p>
         </div>
-        <button type="button" class="btn btn-primary">
-          <a>Check It Out!</a>
-        </button>
-        <button type="button" class="btn btn-success">
-          <a>Github Repo</a>
-        </button>
+        <a class="btn1" target="_blank"
+          ><button type="button" class="btn btn-primary">
+            Check It Out!
+          </button></a
+        >
+        <a class="repo" target="_blank"
+          ><button type="button" class="btn btn-success">
+            Github Repo
+          </button></a
+        >
       </div>
     </div>
 

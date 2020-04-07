@@ -11,15 +11,10 @@ body {
   background-color: transparent;
   box-sizing: border-box;
   resize: horizontal;
-  width: 400px;
-  padding-bottom: 590px;
-}
-
-@media only screen and (max-width: 900px) {
-  .wrapper {
-    width: 250px;
-    padding-bottom: 300px;
-  }
+  width: 30%;
+  height: 90%;
+  min-width: 280px;
+  max-width: 70vh;
 }
 
 .wrapper > .popup {
@@ -60,7 +55,7 @@ body {
   margin-left: 2%;
   width: 45%;
   height: 8%;
-  font-size: 1.4vw;
+  font-size: 10px;
 }
 
 .btn-primary {
@@ -111,7 +106,7 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-top: -5%;
-  font-size: 1.3vw;
+  font-size: 15px;
 }
 
 .description p {

@@ -164,13 +164,13 @@ h1 {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 5%;
   height: 100%;
   overflow: hidden;
 }
 
 .contents {
-  padding-top: 2%;
+  padding-top: 4%;
 }
 
 .contents i {

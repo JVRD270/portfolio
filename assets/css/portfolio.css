@@ -178,7 +178,8 @@ h1 {
 }
 
 .contents p {
-  height: 65%;
+  height: 85%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 h6 {
